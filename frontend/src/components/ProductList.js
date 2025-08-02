@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 
 // Backend URL for Vercel deployment
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://your-app-name.vercel.app';
+// When REACT_APP_BACKEND_URL is not set, we use an empty string to make URLs relative to the current domain
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
 
 const ProductList = ({ products, addToCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
