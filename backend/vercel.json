@@ -13,18 +13,24 @@
     },
     {
       "src": "/images/(.*)",
-      "dest": "public/images/$1"
+      "dest": "images/$1"
     },
     {
       "src": "/static/(.*)",
-      "dest": "public/static/$1"
+      "dest": "static/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "public/index.html"
+      "dest": "index.html"
     }
   ]
 }
+  
+  
+  
+  
+  
+  
   
   
   
