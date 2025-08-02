@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 
+// Backend URL for Vercel deployment
+// When REACT_APP_BACKEND_URL is not set, we use an empty string to make URLs relative to the current domain
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
+
 const ImageUpload = () => {
   const [imageFile, setImageFile] = useState(null);
   const [productId, setProductId] = useState('');
@@ -27,7 +31,7 @@ const ImageUpload = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/upload-image', {
+      const response = await fetch(`${BACKEND_URL}/api/upload-image`, {
         method: 'POST',
         body: formData,
       });

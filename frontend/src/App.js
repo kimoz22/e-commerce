@@ -19,8 +19,9 @@ function App() {
 
   const fetchProducts = () => {
     // Use the backend URL for API calls
-    const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
-    fetch(`${backendUrl}/api/products`)
+    // When REACT_APP_BACKEND_URL is not set, we use an empty string to make URLs relative to the current domain
+    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
+    fetch(`${BACKEND_URL}/api/products`)
       .then(res => {
         if (!res.ok) {
           throw new Error('Network response was not ok');

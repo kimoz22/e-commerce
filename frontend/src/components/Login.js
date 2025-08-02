@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
+// Backend URL for Vercel deployment
+// When REACT_APP_BACKEND_URL is not set, we use an empty string to make URLs relative to the current domain
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
+
 const Login = ({ setIsLoggedIn, setUsername }) => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -20,7 +24,7 @@ const Login = ({ setIsLoggedIn, setUsername }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    fetch('http://192.168.1.9:5000/api/login', {
+    fetch(`${BACKEND_URL}/api/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Signup.css';
 
+// Backend URL for Vercel deployment
+// When REACT_APP_BACKEND_URL is not set, we use an empty string to make URLs relative to the current domain
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || '';
+
 const Signup = () => {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -31,7 +35,7 @@ const Signup = () => {
       return;
     }
     setError('');
-    fetch('http://localhost:5000/api/register', {
+    fetch(`${BACKEND_URL}/api/register`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
