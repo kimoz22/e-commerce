@@ -18,7 +18,9 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('Shoes');
 
   const fetchProducts = () => {
-    fetch('/api/products')
+    // Use the backend URL for API calls
+    const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+    fetch(`${backendUrl}/api/products`)
       .then(res => {
         if (!res.ok) {
           throw new Error('Network response was not ok');

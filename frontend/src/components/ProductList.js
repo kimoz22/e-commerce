@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 
+// Backend URL for Vercel deployment
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://your-app-name.vercel.app';
+
 const ProductList = ({ products, addToCart }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
@@ -34,7 +37,7 @@ const ProductList = ({ products, addToCart }) => {
           textAlign: 'center',
         }}>
           <img
-            src={`${product.image}`}
+            src={`${BACKEND_URL}${product.image}`}
             alt={product.name}
             onClick={() => handleImageClick(product)}
             style={{ width: 'auto', height: '300px', objectFit: 'contain', marginBottom: '12px', marginLeft: 'auto', marginRight: 'auto' }}
@@ -79,7 +82,7 @@ const ProductList = ({ products, addToCart }) => {
               {selectedProduct.images && selectedProduct.images.map((imgSrc, index) => (
                 <img
                   key={index}
-                  src={`${imgSrc}`}
+                  src={`${BACKEND_URL}${imgSrc}`}
                   alt={`${selectedProduct.name} ${index + 1}`}
                   style={{ maxWidth: '150px', maxHeight: '150px', objectFit: 'contain', cursor: 'pointer' }}
                 />
