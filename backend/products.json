@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Air Force 1",
+    "price": 90,
+    "image": "/images/1.jpg",
+    "images": [
+      "/images/nike.jpg",
+      "/images/image-1753638897980-447495051.jpg",
+      "/images/image-1753638897980-447495051.jpg"
+    ],
+    "description": "Classic Nike Air Force 1 shoes.",
+    "category": "Shoes"
+  },
+  {
+    "id": 2,
+    "name": "Adidas Ultraboost",
+    "price": 120,
+    "image": "/images/nike.jpg",
+    "images": [
+      "/images/nike.jpg",
+      "/images/image-1753638897980-447495051.jpg",
+      "/images/image-1753638897980-447495051.jpg"
+    ],
+    "description": "Comfortable Adidas Ultraboost running shoes.",
+    "category": "Shoes"
+  },
+  {
+    "id": 3,
+    "name": "Puma Running Shoes",
+    "price": 80,
+    "image": "/images/puma.jpg",
+    "images": [
+      "/images/nike.jpg",
+      "/images/image-1753638897980-447495051.jpg",
+      "/images/image-1753638897980-447495051.jpg"
+    ],
+    "description": "Lightweight Puma running shoes.",
+    "category": "Shoes"
+  },
+  {
+    "id": 4,
+    "name": "Addidas",
+    "price": 90,
+    "image": "/images/addidas.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 5,
+    "name": "Anta Air",
+    "price": 50,
+    "image": "/images/anta.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 6,
+    "name": "Reebok",
+    "price": 85,
+    "image": "/images/Reebok.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 7,
+    "name": "Hoka",
+    "price": 200,
+    "image": "/images/Hoka.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 8,
+    "name": "Air Force 2",
+    "price": 250,
+    "image": "/images/Airforce2.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 9,
+    "name": "Lebron James",
+    "price": 400,
+    "image": "/images/Lebron2025.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 10,
+    "name": "Stef Curry",
+    "price": 220,
+    "image": "/images/Stefcurry2025.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 11,
+    "name": "Duran 2025",
+    "price": 210,
+    "image": "/images/duran2025.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 12,
+    "name": "Lady Crop Top",
+    "price": 210,
+    "image": "/images/Ladytop.jpg",
+    "category": "Clothes"
+  },
+   {
+    "id": 13,
+    "name": "Lady Top",
+    "price": 210,
+    "image": "/images/Ladytop.jpg",
+    "category": "Clothes"
+  },
+    {
+    "id": 14,
+    "name": "Duran",
+    "price": 210,
+    "image": "/images/duran2025.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 15,
+    "name": "Duran 2",
+    "price": 210,
+    "image": "/images/duran2025.jpg",
+    "category": "Shoes"
+  },
+  {
+    "id": 16,
+    "name": "Duran",
+    "price": 210,
+    "image": "/images/Ladytop.jpg",
+    "category": "Clothes"
+  },
+  {
+    "id": 17,
+    "name": "Duran",
+    "price": 210,
+    "image": "/images/Ladytop.jpg",
+    "category": "Clothes"
+  }
+  
+]

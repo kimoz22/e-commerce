@@ -1,0 +1,18 @@
+[
+  {
+    "firstName": "Carlo",
+    "lastName": "Torres",
+    "address": "Tagoloan",
+    "contactNo": "0997979242",
+    "userName": "kim",
+    "password": "kim1234"
+  },
+  {
+    "firstName": "Roger",
+    "lastName": "Gomez",
+    "address": "Tagoloan",
+    "contactNo": "0987623",
+    "userName": "Roger",
+    "password": "$2b$10$wWzHFKEHKADEtBEZxKqlWOwNCXeYyMKJos3Fn2.XabucLyVeB9zBa"
+  }
+]

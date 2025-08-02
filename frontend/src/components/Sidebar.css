@@ -1,0 +1,33 @@
+.sidebar {
+  width: 20%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  height: fit-content;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.sidebar-menu li a:hover {
+  text-decoration: underline;
+}
